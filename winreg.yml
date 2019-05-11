@@ -1,0 +1,6 @@
+- win_regedit:
+      path: HKLM\Software\Microsoft\Windows
+      name: Somevalue
+      value: 0x3445
+- win_regmerge:
+      path: ComplexRegData.reg

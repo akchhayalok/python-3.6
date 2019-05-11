@@ -1,0 +1,15 @@
+#From another author
+---
+- name: Create temporary deploy Directory
+       win_file:
+       path: "C:\\deploy"
+       state: "directory"
+- name: Download dotNet 4_5 Full Download.exe
+       win_get_url:
+       dest: "C:\\deploy\\dotNet 4_5 Full Download.exe"
+       url: https://webserver/dotnet.exe
+       force: no
+- name: Install dotnet 4.5
+       win_dotnet:
+       src: "C:\\deploy\\dotnet 4_5 Full download.exe"
+       version: '4'

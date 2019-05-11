@@ -1,0 +1,11 @@
+#ensure IIS is running
+- win_service:
+    name: W3Svc
+    state: running
+
+#ensure firewall service is stopped/disabled
+
+- win_service:
+    name: MpsSvc
+    state: stopped
+    start_mode: disabled

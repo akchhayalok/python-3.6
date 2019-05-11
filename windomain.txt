@@ -1,0 +1,11 @@
+#create a domain
+- win_domain:
+       dns_domain_name: mydomain.local
+       safe_mode_password: ItsASecret
+
+#add a user to domain
+- win_domain_user:
+      name: someboby
+      upn: somebody@mydomain.local
+      groups: 
+         - Domain Admins

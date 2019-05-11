@@ -1,0 +1,7 @@
+- win_iis_website
+     name: Default Web Site
+     physical_path: c:\Inetpub\wwwRoot
+- win_iis_webapp:
+     site: Default Web site
+     name: OrchardCMS
+     physical_path: C:\Inetpub\wwwRoot\Orchard

@@ -1,0 +1,9 @@
+- win_owner:
+      path: C:\Program Files\SomeApp
+      user: Administrator
+      recurse: true #remove everybody otherthan administrator from SomeApp
+- win_acl:
+      path: C:\Temp
+      users: Users #Users group
+      rights: ReadAndExecute, Write, Delete
+      inherit: ContainerInherit, ObjectInherit
