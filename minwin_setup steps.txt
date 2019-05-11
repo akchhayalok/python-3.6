@@ -1,0 +1,48 @@
+
+Steps to set up minwin client
+1.	Login to the remote windows client. Remote desktop connection to 10.229.139.48
+2.	Open the cmd window
+3.	Execute the following commands in the clients cmd window prompt
+4.	net use X: \\rtpinf02.rtp.netapp.com\localtest\arch\win32 /u:rtpinf02\minwin qa4testing /persistent:yes
+net use X: \\10.72.10.94\localtest\arch\win32 /u:btcinf02\minwin qa4testing /persistent:yes
+for NB clients
+5.	X:\bin\minwin_setup.bat
+6.	copy X:\bin\rshd.exe  C:\windows\system32
+7.	
+8.	rshd set rhosts *@* shell cmd
+9.	Now another window of rshd is opened. Close that window
+10.	Check in control panel and uninstall winshock RSHD/NT software(it restricts rsh) the windows firewall status if all of them are turned off to make sure that the rshd connection is not blocked and stop remote shell daemon from services
+11.	Now go to the startup folder in the windows all programs and edit startrshd.bat file
+12.	Right click on the rshdbat.exe and open for editing. Remove all the contents there and replace with the following contents , startup properties and copy path and paste it
+In case of win2k12: goto this path 
+C:\Users\Administrator\AppData\roaming\Microsoft\Windows\StartMenu\Programs\startup
+13.	cd " C:\Users\administrator.R3\AppData\Roaming\Microsoft\Windows\Start   Menu\Programs\Startup "    
+( The above path is obtained from right clicking on the rshdbat.exe and click on properties and obtain that path. Space and quotes are mandatory. )
+net stop rshd
+rshd run
+
+eg:
+cd " C:\Users\administrator.R3\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup "  
+  net stop rshd
+rshd run
+
+
+13.	Now save that rshdbat.exe file and now check in control panel all programs if there is a program called windows shock and uninstall it if its there.
+14.	Now run that rshbat.exe file in the startup and it opens a new cmd window where you see rshd run
+15.	Now go to the linux machine (IP – 10.72.225.70 ) and run the commands as rshd <client-ip> dir
+16.	Rsh 10.72.40.99 hostname
+17.	Now we see in the client machine cmd window showing a log of that command running.
+
+
+---sant----
+
+\\rtpinfsw.eng.netapp.com\localtest\arch\win32\
+\\nbinflt.eng.netapp.com\localtest\arch\win32
+
+
+
+net use X: \\rtpinf02.rtp.netapp.com\localtest\arch\win32 /u:rtpinf02\minwin qa4testing /persistent:yes
+X:\bin\minwin_setup.bat 
+X:\bin\ntauto.exe
+
+
