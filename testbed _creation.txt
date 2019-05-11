@@ -1,0 +1,55 @@
+/usr/software/test/bin/tbs -sitedir /x/eng/testbedN,btc -p san_btc_ilab -t host_init -c x3550M4-19-73#root@netapp1!
+===============================================================        #command for testbed creation
+
+
+
+
+
+
+?
+
+
+[2:00 PM] 
+MP, Rajkumar
+
+
+
+change the testbed folder and the client name accordingly
+
+
+
+
+?
+
+
+[2:00 PM] MP, Rajkumar
+
+
+
+i mean -t (which testbed) -c (which client) in the above command
+
+
+
+
+?
+
+
+[2:04 PM] 
+MP, Rajkumar
+
+
+
+my mobile number 9880500453
+
+
+example for interop
+=========================
+-c interop-57-182.lab.eng.btc.netapp.in#root@netapp1!
+
+
+
+
+
+
+
+?

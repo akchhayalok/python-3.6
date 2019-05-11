@@ -1,0 +1,4 @@
+/x/eng/testbedN,btc/san_btc_ilab/host_init_setup
+
+
+/u/akchhay/p4/<workspace>/test/nate/bin/ntest 'PYTEST_ADDOPTS=--logging-level=all.NOTSET --ansible-inipath=/u/akchhay/host.ini' lib/pynacl/client/host_init/host_init.py

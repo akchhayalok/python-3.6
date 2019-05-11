@@ -1,0 +1,15 @@
+Pylint
+==============================
+1. pep8 style guide
+2. find and tells unused variables
+3. uml diagrams
+4. customizable
+
+Setup pylint 
+===============
+1. pip install pylint
+2. pylint example.py
+Note: Pylint integration
+3. pylintrc file
+
+#pylint: disable=too-few-public-methods

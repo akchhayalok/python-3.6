@@ -1,0 +1,12 @@
+steps after fixing
+==================
+
+step 1: open all the edited files p4 open
+step 2: to check change number p4 opened
+step 3: p4 change ----- fill up the form 
+  burt id same
+  reviever kkten
+ propagate uncomment and comment 
+  
+step 4: 
+/x/eng/csitools/rb_test_monitor/do_testing.sh -t cit-pynacl.x86_64.debug.sim -u 0
