@@ -1,12 +1,11 @@
-def si(p,r,i,t)
+def si(p,r,t)
   i= (p*r*t)/100
   return i
-  if __init__ == mian
+if __name__ == "__main__":
 
- print("Enter prinicipal, rate an time ")
- print("Pricipal = ")
- p = input()
- print(" rate =  ")
-r = input()
-print("time = ")
-t = input()
+  print("Enter prinicipal, rate and time ")
+  p = int(input("Enter Pricipal value: "))
+  r = input("Rate: ")
+  t = input("Time: ")
+  SI = si(p,r,t)
+  print(SI)
